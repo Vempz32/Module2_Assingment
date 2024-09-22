@@ -16,12 +16,15 @@ print("type:",type(LicenseStatus))
 year = 2024
 print("value:",year)
 print("type:",type(year))
+#Adding one more number to the year variable
 year +=1
 print("value:",year)
 print("type:",type(year))
 #CALCULATIONS
+#Creating the Const Tax Variables and the price variable
 GST = .05
 PST =  .07
+
 Price  = 70000
 
 FederalTax = Price *  GST
@@ -30,6 +33,8 @@ provincialTax = Price *  PST
 FinalCost = Price  + FederalTax + provincialTax
 
 print("Pre-Tax Value:", Price, "Provincial Tax: ",provincialTax, "Federal Tax: ",  FederalTax, "Final Cost: ", FinalCost)
+#Formatting the text so it  is easier to read and is in a proper dollar format
+
 Text = f" Pre-Tax Value: ${Price:,.2f} Provincial Tax: ${provincialTax:,.2f} Federal Tax: ${FederalTax:,.2f} total:  ${FinalCost:,.2f}"
 print(Text)
 
@@ -50,6 +55,8 @@ list3 = Numbers + list2
 print(list3)
 #TUPLES
 provinces  = ("BC","Alberta","Ontario","Manitoba")
+
+#printing the Type of the Provinces  variable
 print(type(provinces))
 print(provinces)
 
@@ -61,6 +68,7 @@ Coins = {
 }
 print(type(Coins))
 print(Coins)
+#Creating new "Loonie" and "Toonie" Values and adding them to the dictionary 
 Coins["Loonie"] =  1.00
 Coins["Toonie"] = 2.00
 print(Coins)
